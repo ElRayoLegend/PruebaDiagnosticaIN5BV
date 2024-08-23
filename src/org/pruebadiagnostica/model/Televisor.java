@@ -29,5 +29,14 @@ public class Televisor extends Dispositivo {
     public void encender(int volumen){
         System.out.println("Ajustando volumen automaticamente en: " + volumen);
     }
+
+    public int getTamanioPantalla() {
+        return tamanioPantalla;
+    }
+
+    public void setTamanioPantalla(int tamanioPantalla) {
+        this.tamanioPantalla = tamanioPantalla;
+    }
+    
     
 }
