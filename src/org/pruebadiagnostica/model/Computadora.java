@@ -23,11 +23,12 @@ public class Computadora extends Dispositivo {
 
     @Override
     public void encender() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        System.out.println("El telefono esta encendido");
     }
     
     public void encender (String clave){
-        System.out.println("Obteniendo clave de usuario:" + clave);
+        System.out.println("Encendiendo dispositivo con clave de usuario:" + clave);
+        System.out.println("\nDISPOSITIVO ENCENDIDO");
     }
 
     public String getSistemaOperativo() {

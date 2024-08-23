@@ -30,6 +30,7 @@ public abstract class Dispositivo {
     }
     
     public void mostrarInformacion(){
+        System.out.println("La informacion del dispositivo es:");
         System.out.println("Marca: " + marca);
         System.out.println("Modelo: " + modelo);
         System.out.println("Año: " + anio);
