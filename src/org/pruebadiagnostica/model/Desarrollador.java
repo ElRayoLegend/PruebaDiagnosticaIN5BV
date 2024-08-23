@@ -16,7 +16,8 @@ public class Desarrollador extends Empleado {
         super(nombre, edad, salario);
         this.lenguajeDeProgramacion = lenguajeProgramacion;
     }
-
+    
+    @Override
     public void trabajar() {
         System.out.println(nombre + " está desarrollando en " + lenguajeDeProgramacion);
     }
