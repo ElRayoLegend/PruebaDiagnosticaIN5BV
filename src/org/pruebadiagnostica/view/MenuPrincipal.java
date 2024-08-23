@@ -17,7 +17,7 @@ import org.pruebadiagnostica.model.Televisor;
 public class MenuPrincipal {
     Scanner leer = new Scanner(System.in);
     boolean flag = true;
-    int opcion, opcion1, codDesbloqueo;
+    int opcion, opcion1, codDesbloqueo, volumen;
     String skip, clave;
     public void inicio(){
         System.out.println("Bienvenido al programa!");
@@ -101,33 +101,32 @@ public class MenuPrincipal {
                                 break;
                             case 3:
                                 System.out.println("\nIngresa la marca del dispositivo:");
-                                computadora.setMarca(leer.nextLine());
-                                computadora.setMarca(leer.nextLine());
+                                televisor.setMarca(leer.nextLine());
+                                televisor.setMarca(leer.nextLine());
                                 System.out.println("\nIngresa el modelo del dispositivo:");
-                                computadora.setModelo(leer.nextLine());
+                                televisor.setModelo(leer.nextLine());
                                 System.out.println("\nIngresa el año del dispositivo:");
-                                computadora.setAnio(leer.nextLine());
-                                System.out.println("\nIngresa el sistema operativo de la computadora:");
-                                computadora.setSistemaOperativo(leer.nextLine());
+                                televisor.setAnio(leer.nextLine());
+                                System.out.println("\nIngresa el tamanio de la pantalla:");
+                                televisor.setTamanioPantalla(leer.nextInt());
                                 
-                                System.out.println("\nDeseas encender la computadora? \n1. Si \n2. No");
+                                System.out.println("\nDeseas encender el televisor? \n1. Si \n2. No");
                                 opcion = leer.nextInt();
                                 if (opcion == 1) {
-                                    System.out.println("\nDeseas encenderla con clave de usuario? \n1. Si \n2. No");
+                                    System.out.println("\nDeseas encenderlo con un volumen predeterminado? \n1. Si \n2. No");
                                     opcion = leer.nextInt();
                                     if (opcion == 1) {
-                                        System.out.println("\nIngresa la clave de usuario:");
-                                        clave = leer.nextLine();
-                                        clave = leer.nextLine();
-                                        computadora.encender(clave);
+                                        System.out.println("\nIngresa el volumen:");
+                                        volumen = leer.nextInt();
+                                        televisor.encender(volumen);
                                     }else{
-                                        computadora.encender();
+                                        televisor.encender();
                                     }
                                 }else{
-                                    System.out.println("La PC no se encendio");
+                                    System.out.println("El televisor no se encendio");
                                 }
                                 
-                                computadora.mostrarInformacion();
+                                televisor.mostrarInformacion();
                                 
                                 break;
                             default:

@@ -28,6 +28,7 @@ public class Telefono extends Dispositivo {
     
     public void encender(int codigo){
         System.out.println("Encendiendo con codigo de desbloqueo: " + codigo);
+        System.out.println("\nDISPOSITIVO ENCENDIDO");
     }
 
     public String getTipo() {

@@ -23,7 +23,7 @@ public class Computadora extends Dispositivo {
 
     @Override
     public void encender() {
-        System.out.println("El telefono esta encendido");
+        System.out.println("La computadora esta encendida");
     }
     
     public void encender (String clave){

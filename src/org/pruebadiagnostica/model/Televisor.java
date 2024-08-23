@@ -23,11 +23,12 @@ public class Televisor extends Dispositivo {
     
     @Override
     public void encender() {
-        System.out.println("El telefono esta encendido");
+        System.out.println("La TV esta encendida");
     }
     
     public void encender(int volumen){
         System.out.println("Ajustando volumen automaticamente en: " + volumen);
+        System.out.println("\nDISPOSITIVO ENCENDIDO");
     }
 
     public int getTamanioPantalla() {
