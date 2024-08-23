@@ -1,14 +1,26 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package org.pruebadiagnostica.model;
 
-/**
- *
- * @author informatica
- */
-public class Circulo {
-    
+public class Circulo extends Forma{
+    private double radio;
+
+    public Circulo() {
+    }
+
+    public Circulo(double radio, String color) {
+        super(color);
+        this.radio = radio;
+    }
+
+    public double getRadio() {
+        return radio;
+    }
+
+    public void setRadio(double radio) {
+        this.radio = radio;
+    }
+
+    @Override
+    public String toString() {
+        return "Circulo{" + "radio=" + radio + '}';
+    }
 }
