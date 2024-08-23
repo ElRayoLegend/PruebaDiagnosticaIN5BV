@@ -23,11 +23,21 @@ public class Televisor extends Dispositivo {
     
     @Override
     public void encender() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        System.out.println("La TV esta encendida");
     }
     
     public void encender(int volumen){
         System.out.println("Ajustando volumen automaticamente en: " + volumen);
+        System.out.println("\nDISPOSITIVO ENCENDIDO");
     }
+
+    public int getTamanioPantalla() {
+        return tamanioPantalla;
+    }
+
+    public void setTamanioPantalla(int tamanioPantalla) {
+        this.tamanioPantalla = tamanioPantalla;
+    }
+    
     
 }

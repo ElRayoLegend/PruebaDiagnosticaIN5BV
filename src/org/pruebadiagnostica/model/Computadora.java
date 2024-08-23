@@ -13,13 +13,32 @@ public class Computadora extends Dispositivo {
     
     private String sistemaOperativo;
 
+    public Computadora() {
+    }
+
+    public Computadora(String sistemaOperativo, String marca, String modelo, String anio) {
+        super(marca, modelo, anio);
+        this.sistemaOperativo = sistemaOperativo;
+    }
+
     @Override
     public void encender() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        System.out.println("La computadora esta encendida");
     }
     
     public void encender (String clave){
-        System.out.println("Obteniendo clave de usuario:" + clave);
+        System.out.println("Encendiendo dispositivo con clave de usuario:" + clave);
+        System.out.println("\nDISPOSITIVO ENCENDIDO");
     }
+
+    public String getSistemaOperativo() {
+        return sistemaOperativo;
+    }
+
+    public void setSistemaOperativo(String sistemaOperativo) {
+        this.sistemaOperativo = sistemaOperativo;
+    }
+    
+    
     
 }
