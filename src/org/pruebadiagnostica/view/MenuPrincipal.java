@@ -31,7 +31,7 @@ public class MenuPrincipal {
 
                 switch (opcion) {
                     case 1:
-
+                        
                         break;
                     case 3:
                         System.out.println("EJERCICIO 3 \nSelecciona el dispositivo: \n1. Telefono \n2. Computadora \n3. Televisor");
